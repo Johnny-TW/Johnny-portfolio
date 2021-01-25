@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIMMY SKATEBOARD STORE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="shortcut icon" href="./litile.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+        /* * {
+            outline: 1px solid red;
+        } */
+
+        /* body {
+            height: 300vh;
+        } */
+
+        /* ---------------------------------------navbar */
+
+        #navbarSupportedContent {
+            margin: 0 6rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            margin: 0 1rem;
+        }
+
+        .navbar {
+            background-color: #000;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navbar-nav {
+            color: white;
+        }
+
+        .navbar-nav li {
+            font-size: 1.1rem;
+        }
+
+        /* ------------------------------------bannerimg */
+
+        #Hero-1 {
+            background-color: #000;
+        }
+
+        .left-banner {
+            width: 100%;
+            background-color: #000;
+        }
+
+        .left-banner img {
+            width: 100%;
+            background-color: #000;
+        }
+
+        .right-banner {
+            width: 100%;
+            height: 100%;
+        }
+
+        .right-banner-text {
+            font-size: 1.2rem;
+            color: #fff;
+            text-align: center;
+            height: 10%;
+            outline: 1px solid white;
+        }
+
+        .right-banner-text:hover {
+            transition: .2s;
+            background-color: #3F3F3F;
+        }
+
+        .right-banner video {
+            margin: 1rem 0;
+        }
+
+        .jimmy {
+            font-size: 6rem;
+            position: absolute;
+            top: 10rem;
+            left: 5rem;
+            font-family: 'Righteous', cursive;
+            color: #fff;
+            line-height: 5rem;
+            text-shadow: 1px 5px 5px #000;
+        }
+
+        .NewYork {
+            font-size: 3rem;
+            position: absolute;
+            top: 20rem;
+            left: 5rem;
+            font-family: 'Righteous', cursive;
+            color: #fff;
+            line-height: 3rem;
+            text-shadow: 1px 5px 5px #000;
+        }
+
+        .startopen {
+            font-size: 1.5rem;
+            position: absolute;
+            top: 30rem;
+            left: 5rem;
+            font-family: 'Righteous', cursive;
+            color: #fff;
+            line-height: 1rem;
+            text-shadow: 1px 5px 5px #000;
+        }
+
+        /* ----------------------------------------body2 */
+
+        #body-2 {
+            margin: 3rem 0;
+        }
+
+        #Hero-2 {
+            background-color: pink;
+        }
+
+        .b2text {
+            font-size: 10rem;
+            color: white;
+            top: 5rem;
+            left: 15rem;
+            letter-spacing: 10rem;
+            font-family: 'Monoton', cursive;
+            text-shadow: 1px 10px 10px #faf;
+            z-index: 1;
+        }
+
+        #body2-photo {
+            display: block;
+            justify-content: space-between;
+        }
+
+        /* ----------------------------------------body3 */
+
+        #body-3 {
+            margin: 3rem 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./底色.png);
+            background-size: 100%;
+            background-size: cover;
+        }
+
+        .photo h1 {
+            color: #fff;
+            text-align: center;
+            padding-top: .8rem;
+            font-family: 'Righteous', cursive;
+        }
+
+        .photo p {
+            color: #fff;
+            text-align: center;
+        }
+
+        .body3-top {
+            text-align: center;
+            outline: 1px solid gray;
+        }
+
+        #body3-photo {
+            padding: 2rem 3rem;
+        }
+
+        .photo img:hover {
+            transition: .1s;
+            filter: brightness(70%);
+        }
+
+        /* -----------------------------------------------body4 */
+
+        .product-box {
+            justify-content: space-between;
+            height: 300px;
+        }
+
+        .product1 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .product1 p {
+            text-align: center;
+            padding: .5rem 0;
+            margin: 1rem 0;
+            border: 1px solid #3F3F3F;
+            font-family: 'Chakra Petch', sans-serif;
+        }
+
+        /* .top-box {
+            display: inline-block;
+        } */
+
+        .top-text {
+            border: 1px solid black;
+            padding: 3px;
+            width: 20%;
+            text-align: center;
+        }
+
+        .top-text h1 {
+            font-size: 2rem;
+        }
+
+        .product1 p:hover {
+            background-color: #dcdcdc;
+            transition: 1s;
+        }
+
+        /* #T4 {
+            border-top: 30px solid white;
+            border-bottom: 30px solid white;
+            border-right: 40px solid #3F3F3F;
+            padding-left: 30rem;
+        }
+
+        #T2 {
+            border-top: 30px solid white;
+            border-bottom: 30px solid white;
+            border-left: 40px solid #3F3F3F;
+        } */
+
+
+        /* -----------------------------------------------footer */
+
+        .foot-about p {
+            font-size: 14px;
+            line-height: 2;
+            color: #fff;
+        }
+
+        #footer {
+            background-color: #000;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .inder1 {
+            color: white;
+            line-height: 2rem;
+            padding-left: 4rem;
+        }
+
+        .inderh1 {
+            font-size: 1.5rem;
+        }
+
+        .inder1 li {
+            color: #828282;
+        }
+
+        /* 主畫面動態效果 */
+
+        .animate__animated.animate__lightSpeedInLeft {
+            --animate-duration: 1s;
+        }
+
+        .animate__animated.animate__fadeInUp {
+            --animate-duration: 3s;
+        }
+
+        .downword {
+            color: #fff;
+            position: fixed;
+            z-index: 999;
+            font-size: 1.5rem;
+            width: 2rem;
+            height: 20rem;
+            top: 15rem;
+            left: 2rem;
+            writing-mode: vertical-rl;
+        }
+
+        .downword:hover {
+            transition: 1s;
+            color: #828282;
+        }
+
+        /* Body2- Jq動態效果 */
+
+        .board {
+            margin-left: auto;
+            transform: translateY(300px);
+            transition: .8s ease-out;
+            opacity: 0.6;
+        }
+
+        .board.move-up {
+            transform: translateY(50px);
+            opacity: 1;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+
+    <a href="#">
+        <div class="toptext">
+            <p class="downword">JIMMY - STORE HOME ↓ ↓ ↓</p>
+        </div>
+    </a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <img src="./LOGO-icon/資產 1.png" alt="" width="60">
+            <a class="navbar-brand" href="#">JIMMY STORE</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Story <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Shop <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff"
+                            viewBox="0 0 32 32">
+                            <title>cart</title>
+                            <path
+                                d="M31.914 5.4l-2.914 11.6c0 0.139-0.028 0.27-0.078 0.389-0.102 0.24-0.293 0.432-0.532 0.533-0.12 0.051-0.252 0.078-0.39 0.078h-19l0.8 4h17.2c0.553 0 1 0.447 1 1s-0.447 1-1 1h-18c-0.553 0-1-0.447-1-1l-3.8-19h-3.2c-0.552 0-1-0.448-1-1s0.448-1 1-1h4c0.553 0 1 0.448 1 1l0.2 1h24.8c0.553 0 1 0.448 1 1 0 0.143-0.032 0.277-0.086 0.4zM8.6 16h3.4v-10h-5.4l2 10zM18 6h-5v10h5v-10zM24 6h-5v10h5v-10zM25 6v10h2.253l2.533-10h-4.786zM11 26c1.657 0 3 1.344 3 3s-1.343 3-3 3-3-1.344-3-3 1.343-3 3-3zM11 30c0.553 0 1-0.447 1-1s-0.447-1-1-1-1 0.447-1 1 0.447 1 1 1zM25 26c1.657 0 3 1.344 3 3s-1.343 3-3 3-3-1.344-3-3 1.343-3 3-3zM25 30c0.553 0 1-0.447 1-1s-0.447-1-1-1-1 0.447-1 1 0.447 1 1 1z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff"
+                            viewBox="0 0 32 32">
+                            <title>search</title>
+                            <path
+                                d="M19.427 20.427c-1.39 0.99-3.090 1.573-4.927 1.573-4.694 0-8.5-3.806-8.5-8.5s3.806-8.5 8.5-8.5c4.694 0 8.5 3.806 8.5 8.5 0 1.837-0.583 3.537-1.573 4.927l5.585 5.585c0.55 0.55 0.546 1.431-0 1.976l-0.023 0.023c-0.544 0.544-1.431 0.546-1.976 0l-5.585-5.585zM14.5 20c3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5v0z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="body-1">
+        <div id="Hero-1" class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-8">
+
+                    <div class="left-banner">
+                        <img src="./Skateboardbgc.jpg" alt="">
+                    </div>
+
+                    <div class="left-text">
+                        <p class="jimmy animate__animated animate__lightSpeedInLeft">JIMMY<br>STORE</p>
+                        <p class="NewYork animate__animated animate__lightSpeedInLeft">NEW YORK CITY<br>SKATE
+                            BORAD<br>PHOTOGRAPHY</p>
+                        <p class="startopen animate__animated animate__fadeInUp">2020 START OPEN & LETS KEEP SKATE</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                    <div class="right-banner">
+                        <div class="right-banner-text">
+                            <p>Slow Motion Video</p>
+                        </div>
+                        <video class="vedio-1" width="100%" controls>
+                            <source src="./P1060746.mov" type="video/mp4">
+                        </video>
+                        <div class="right-banner-text">
+                            <p>TOP10 Skill Video</p>
+                        </div>
+                        <video class="vedio-2" width="100%" controls>
+                            <source src="./Wallride_Nose_Manuel.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="body-2">
+        <div id="Hero-2" class="container-fluid">
+            <div class="row d-flex position-relative">
+                <div class="board col-12">
+                    <img src="./skateboard-img/Skateboard-Mockup-1.png" alt="" width="100%">
+                </div>
+                <div class="skate2-text">
+                    <p class="b2text position-absolute">CTO<br>DES<br>BRD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="body-3">
+        <div class="container">
+            <div id="body3-int" class="row">
+                <div id="body3-photo" class="col-12 col-md-6 col-lg-4">
+                    <div class="photo flex-grow">
+                        <img src="./skateboard-img/body-3工作區域 1.jpg" alt="" width="100%">
+                        <h1>Outfit</h1>
+                        <p>Photography</p>
+                        <button type="button" class="btn btn-danger w-100">Check</button>
+                    </div>
+                </div>
+                <div id="body3-photo" class="col-12 col-md-6 col-lg-4">
+                    <div class="photo flex-grow">
+                        <img src="./skateboard-img/body-3工作區域 2.jpg" alt="" width="100%">
+                        <h1>Activity</h1>
+                        <p>Lets Learn New Skills</p>
+                        <button type="button" class="btn btn-danger w-100">Check</button>
+                    </div>
+                </div>
+                <div id="body3-photo" class="col-12 col-md-6 col-lg-4">
+                    <div class="photo flex-grow">
+                        <img src="./skateboard-img/body-3工作區域 3.jpg" alt="" width="100%">
+                        <h1>Latest Events</h1>
+                        <p>Enjoy Together</p>
+                        <button type="button" class="btn btn-danger w-100">Check</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="body-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="top-box d-flex justify-content-between">
+                        <div class="top-text">
+                            <h1>Tires</h1>
+                        </div>
+                        <div id="T4"></div>
+                        <div id="T2"></div>
+                    </div>
+                    <div class="product-box d-flex">
+                        <div class="product1">
+                            <img src="./skateborad-preoduct/工作區域 1.jpg" alt="" width="100%">
+                            <p>Rollerskate Wheels</p>
+                        </div>
+                        <div class="product1">
+                            <img src="./skateborad-preoduct/工作區域 2.png" alt="" width="100%">
+                            <p>Rollerskate Wheels</p>
+                        </div>
+                        <div class="product1">
+                            <img src="./skateborad-preoduct/工作區域 3.png" alt="" width="100%">
+                            <p>Rollerskate Wheels</p>
+                        </div>
+                        <div class="product1">
+                            <img src="./skateborad-preoduct/工作區域 4.png" alt="" width="100%">
+                            <p>Rollerskate Wheels</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="top-text">
+                        <h1>Components</h1>
+                    </div>
+                    <div class="product-box d-flex">
+                        <div class="product1">
+                            <img src="./skateborad-preoduct/工作區域 5.png" alt="" width="100%">
+                            <p>Rollerskate Wheels</p>
+                        </div>
+                        <div class="product1">
+                            <img src="./skateborad-preoduct/工作區域 6.png" alt="" width="100%">
+                            <p>Rollerskate Wheels</p>
+                        </div>
+                        <div class="product1">
+                            <img src="./skateborad-preoduct/工作區域 7.png" alt="" width="100%">
+                            <p>Bones Reds</p>
+                        </div>
+                        <div class="product1">
+                            <img src="./skateborad-preoduct/工作區域 8.png" alt="" width="100%">
+                            <p>Rollerskate Wheels</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="body-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./skateimg/board1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./skateimg/board2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./skateimg/board3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <h1
+                        style="text-align: center;font-size: 1.5rem ; padding: 2rem 0;font-family:'Righteous', cursive;">
+                        Top 10 Skateboard</h1>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./skateimg/board4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./skateimg/board3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./skateimg/board2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" fill="black"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <h1 style="text-align: center;font-size: 1.5rem ;padding: 2rem 0;font-family:'Righteous', cursive;">
+                        Skateboard</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer" class="container-fluid">
+            <div class="row d-flex flex-wrap align-tet-center">
+                <div class="col-12 col-md-3 col-lg-3">
+                    <ul class="inder1">
+                        <div class="inderh1">About JIMMY</div>
+                        <li>Shipping FAQ</li>
+                        <li>Return policy</li>
+                        <li>Terms of use</li>
+                        <li>Contact us</li>
+                        <li>News</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <ul class="inder1">
+                        <div class="inderh1">Contact</div>
+                        <li>+34 931281026</li>
+                        <li>info@al-carrer.es</li>
+                        <li>Carrer Tantarantana, 2</li>
+                        <li>Monday – Saturday: 12H – 21H</li>
+                        <li>Sunday: 14H – 19H</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <ul class="inder1">
+                        <div class="inderh1">Explore</div>
+                        <li>Jobs</li>
+                        <li>About Zumiez</li>
+                        <li>Zumiez Foundation</li>
+                        <li>Zumiez Stand Up</li>
+                        <li>Blue Tomato</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3">
+                    <ul class="inder1">
+                        <div class="inderh1">BE THE FIRST TO KNOW</div>
+                        <li>Subscribe to email + never miss out.</li>
+                        <button>EMAIL SIGN UP</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        $(window).on('scroll', function () {
+            let scrollTop = $(this).scrollTop();
+
+            let isMobile = $(this).width() < 375;
+            let boardMoveupY = 500;
+
+            let lefttext = $(this).width() < 2550;
+            let lefttextMoveupY = 500;
+
+            // console.log('scrollTop', scrollTop)
+
+            if (isMobile) {
+                boardMoveupY = 500;
+            }
+
+            if (scrollTop > boardMoveupY) {
+                $('.board').addClass('move-up');
+            }
+
+            else {
+                $('.board').removeClass('move-up');
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

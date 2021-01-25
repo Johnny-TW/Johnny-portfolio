@@ -1,0 +1,107 @@
+/* -------------------------------- ipad 768 */ 
+@media screen and (max-width: 768px){
+    .jimmy {
+        font-size: 4rem;
+        position: absolute;
+        top:5rem;
+        left: 2rem;
+        font-family: 'Righteous', cursive;
+        color: #fff;
+        line-height: 3.5rem;
+    }
+
+    .NewYork {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 12rem;
+        left: 2rem;
+        font-family: 'Righteous', cursive;
+        color: #fff;
+        line-height: 1rem;
+    }
+
+    .startopen {
+        font-size: .1rem;   
+        position: absolute;
+        top: 20rem;
+        left: 2rem;
+        font-family: 'Righteous', cursive;
+        color: #fff;
+        line-height: 1rem;
+    }
+
+    .b2text{
+        font-size: 5rem;
+        color: white;
+        letter-spacing:5rem;
+        font-family: 'Monoton', cursive;
+        text-shadow: 1px 10px 10px #faf;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    /* ------------------------------------body1-body2 */
+
+    .jimmy {
+        font-size: 2rem;
+        position: absolute;
+        top:3rem;
+        left: 2rem;
+        font-family: 'Righteous', cursive;
+        color: #fff;
+        line-height: 2rem;
+    }
+
+    .NewYork {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 7rem;
+        left: 2rem;
+        font-family: 'Righteous', cursive;
+        color: #fff;
+        line-height: 1rem;
+    }
+
+    .startopen{
+        font-size: .1rem;
+        position: absolute;
+        top: 10rem;
+        left: 2rem;
+        font-family: 'Righteous', cursive;
+        color: #fff;
+        line-height: 1rem;
+    }
+
+    .b2text{
+        font-size: 3rem;
+        color: white;
+        left: 5rem;
+        top: 1rem;
+        letter-spacing: 3rem;
+        font-family: 'Monoton', cursive;
+        text-shadow: 1px 10px 10px #faf;
+    }
+    .top-text{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .top-text h1{
+        font-size: 1.2rem;
+    }
+
+    .downword {
+        display: none;
+    }
+
+    .product-box{
+        height:250px;
+        margin-top:50px;
+    }
+
+    .inder1{
+        padding-left: 20px;
+    }
+}

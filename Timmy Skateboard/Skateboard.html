@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkateBoard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* * {
+            outline: 1px solid red;
+        } */
+
+        /* -----------------------------Heder */
+
+        .wrap img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: brightness(70%);
+        }
+
+        .logo {
+            width: 12rem;
+            position: absolute;
+            top: 2rem;
+            left: 3rem;
+        }
+
+        .global-nav {
+            display: flex;
+            position: absolute;
+            top: 3rem;
+            right: 10rem;
+        }
+
+        .init {
+            margin: 0 3rem;
+        }
+
+        .init a {
+            color: white;
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+            text-decoration: none;
+        }
+
+        .global-nav svg {
+            margin: 0 1.2rem;
+        }
+
+        .init a:hover {
+            color: gray;
+            transition: 1s;
+        }
+
+        .Skate-text {
+            font-size: 100px;
+            position: absolute;
+            font-family: 'Mukta Malar', sans-serif;
+            font-weight: bold;
+            bottom: 13rem;
+            left: 8rem;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            line-height: 5rem;
+        }
+
+        .Skate-text2 {
+            font-size: 50px;
+            position: absolute;
+            font-family: 'Mukta Malar', sans-serif;
+            font-weight: bold;
+            bottom: 5rem;
+            left: 8rem;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            line-height: 40px;
+        }
+
+        /* --------------------------------Body */
+        .row {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .photograph {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .photograph img {
+            height: 600px;
+            position: relative;
+            top: 35px;
+        }
+
+        .photo {
+            margin: 3rem;
+        }
+
+        .photo-text {
+            font-size: 30px;
+            text-align: center;
+            margin: 10px 50px;
+            outline: 2px solid white;
+            position: relative;
+            bottom: 100px;
+            color: white;
+        }
+
+        .photo-text p:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: 1s;
+        }
+
+        /* ---------------------------------------Body2 */
+
+        .body2 {
+            position: relative;
+        }
+
+        .bg-photo img {
+            width: 100%;
+            height: 1080px;
+            overflow: hidden;
+        }
+
+        .bg-text1 p {
+            position: absolute;
+            font-size: 180px;
+            bottom: 10rem;
+            left: 20rem;
+            letter-spacing: 100px;
+            color: white;
+            text-shadow: 5px 5px 5px #faa;
+            text-align: center;
+            font-family: 'Monoton', cursive;
+        }
+
+        .bg-text1 button {
+            position: absolute;
+            bottom: 12rem;
+            right: 20rem;
+        }
+
+
+        .footer-box {
+            width: 100%;
+            height: 300px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="skate-bg">
+                <img src="./skateboard-img/Skateboard7.jpg" alt="">
+                <div class="logo">
+                    <img src="./LOGO-icon/資產 1.png" alt="">
+                </div>
+            </div>
+            <div class="Skate-text">
+                <p>JIMMY<br>STORE</p>
+            </div>
+            <div class="Skate-text2">
+                <p>NEW YORK CITY<br>SKATE BOARDS<br>PHOTO GRAPHY</p>
+            </div>
+
+            <div class="header-nav">
+                <ul class="global-nav">
+                    <li class="init">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="init">
+                        <a href="#">Story</a>
+                    </li>
+                    <li class="init">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="init">
+                        <a href="#">Shop</a>
+                    </li>
+                    <a href="#">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 32 32">
+                            <title>cart</title>
+                            <path
+                                d="M31.914 5.4l-2.914 11.6c0 0.139-0.028 0.27-0.078 0.389-0.102 0.24-0.293 0.432-0.532 0.533-0.12 0.051-0.252 0.078-0.39 0.078h-19l0.8 4h17.2c0.553 0 1 0.447 1 1s-0.447 1-1 1h-18c-0.553 0-1-0.447-1-1l-3.8-19h-3.2c-0.552 0-1-0.448-1-1s0.448-1 1-1h4c0.553 0 1 0.448 1 1l0.2 1h24.8c0.553 0 1 0.448 1 1 0 0.143-0.032 0.277-0.086 0.4zM8.6 16h3.4v-10h-5.4l2 10zM18 6h-5v10h5v-10zM24 6h-5v10h5v-10zM25 6v10h2.253l2.533-10h-4.786zM11 26c1.657 0 3 1.344 3 3s-1.343 3-3 3-3-1.344-3-3 1.343-3 3-3zM11 30c0.553 0 1-0.447 1-1s-0.447-1-1-1-1 0.447-1 1 0.447 1 1 1zM25 26c1.657 0 3 1.344 3 3s-1.343 3-3 3-3-1.344-3-3 1.343-3 3-3zM25 30c0.553 0 1-0.447 1-1s-0.447-1-1-1-1 0.447-1 1 0.447 1 1 1z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 32 32">
+                            <title>search</title>
+                            <path fill
+                                d="M19.427 20.427c-1.39 0.99-3.090 1.573-4.927 1.573-4.694 0-8.5-3.806-8.5-8.5s3.806-8.5 8.5-8.5c4.694 0 8.5 3.806 8.5 8.5 0 1.837-0.583 3.537-1.573 4.927l5.585 5.585c0.55 0.55 0.546 1.431-0 1.976l-0.023 0.023c-0.544 0.544-1.431 0.546-1.976 0l-5.585-5.585zM14.5 20c3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5v0z">
+                            </path>
+                        </svg>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="row">
+            <div class="photograph">
+                <div class="photo">
+                    <img src="./skateboard-img/body-3工作區域 1.jpg" alt="">
+                    <div class="photo-text">
+                        <a href="#">
+                            <p>Photography</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="./skateboard-img/body-3工作區域 2.jpg" alt="">
+                    <div class="photo-text">
+                        <a href="#">
+                            <p>Activity</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="./skateboard-img/body-3工作區域 3.jpg" alt="">
+                    <div class="photo-text">
+                        <a href="">
+                            <p>Outfit</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="body2">
+            <div class="bg-photo">
+                <img src="./skateboard-img/Skateboard-Mockup-1.jpg" alt="">
+                <div class="bg-text1">
+                    <p>KEP<br>SKT<br>BRD</p>
+                    <button type="button" class="btn btn-danger btn-lg"
+                        style="box-shadow: 2px 2px 5px white;">Check</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-box">
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+    </script>
+
+
+</body>
+
+</html>
